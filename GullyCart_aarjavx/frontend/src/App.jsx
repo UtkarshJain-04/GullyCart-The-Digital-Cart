@@ -20,7 +20,8 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
           </Route>
-          <Route element={<PrivateRoute />}>
+          
+          <Route element={<PublicRoute/>}>
             <Route path="/dashboard" element={<DashboardRedirect />} />
             <Route element={<RoleRoute roles={['vendor']} />}>
               <Route path="/vendor/dashboard" element={<VendorDashboard />} />
