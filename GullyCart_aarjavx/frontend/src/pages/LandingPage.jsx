@@ -50,7 +50,7 @@ const Hero = () => (
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
         </Link>
-        <Link to="/signup" className="group relative inline-flex items-center justify-center bg-white text-blue-700 font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 border-2 border-blue-100 hover:border-blue-300 hover:bg-blue-50 shadow-sm hover:shadow-md hover:-translate-y-1 hover:scale-105">
+        <Link to="/vendor/dashboard" className="group relative inline-flex items-center justify-center bg-white text-blue-700 font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 border-2 border-blue-100 hover:border-blue-300 hover:bg-blue-50 shadow-sm hover:shadow-md hover:-translate-y-1 hover:scale-105">
           Register a Cart
         </Link>
       </div>
