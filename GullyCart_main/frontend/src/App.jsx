@@ -20,15 +20,16 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
           </Route>
-          <Route element={<PrivateRoute />}>
+          
+          <Route element={<PublicRoute/>}>
             <Route path="/dashboard" element={<DashboardRedirect />} />
-            <Route element={<RoleRoute roles={['vendor']} />}>
+            <Route element={<PublicRoute/>}>
               <Route path="/vendor/dashboard" element={<VendorDashboard />} />
             </Route>
-            <Route element={<RoleRoute roles={['admin']} />}>
+            <Route element={<PublicRoute/>}>
               <Route path="/admin/dashboard" element={<AdminDashboard />} />
             </Route>
-            <Route element={<RoleRoute roles={['user']} />}>
+            <Route element={<PublicRoute/>}>
               <Route path="/user/dashboard" element={<UserHomepage />} />
             </Route>
           </Route>
